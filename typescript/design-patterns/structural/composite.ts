@@ -168,14 +168,13 @@ class Folder implements CompositeFileSystemComponent {
     }
 }
 
-
 // Client code
 
-const file1 = new FileComponent('file.txt', 500);
-const file2 = new FileComponent('file2.txt', 800);
-const file3 = new FileComponent('file3.txt', 1200);
+const file1: FileComponent = new FileComponent('file1.txt', 500);
+const file2: FileComponent = new FileComponent('file2.txt', 800);
+const file3: FileComponent = new FileComponent('file3.txt', 1200);
 
-const folder = new Folder('My Folder');
+const folder: Folder = new Folder('My Folder');
 
 folder.addComponent( file1 );
 folder.addComponent( file2 );
@@ -189,5 +188,4 @@ folder
     });
 
 console.log(`Total Size ${ folder.getSize() }`)
-
 
