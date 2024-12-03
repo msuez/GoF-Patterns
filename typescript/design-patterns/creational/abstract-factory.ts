@@ -148,3 +148,7 @@ function renderUI(factory: GUIFactory) {
 
 
 renderUI(new WindowsFactory());
+renderUI(new MacOSFactory());
+
+
+
