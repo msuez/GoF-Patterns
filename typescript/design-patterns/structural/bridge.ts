@@ -91,7 +91,6 @@ abstract class DatabaseService {
     constructor(
         protected database: Database,
     ) {}
-
     abstract fetchData(query: string): void;
 }
 
@@ -103,8 +102,9 @@ class ClientDatabaseService extends DatabaseService {
     }
 }
 
+const mongoDbService = new ClientDatabaseService( new MongoDBDatabase() );
 const postgresService = new ClientDatabaseService( new PostgresSQLDatabase() );
+
+mongoDbService.fetchData("SELECT * FROM Users");
 postgresService.fetchData("SELECT * FROM Users;");
 
-const mongoDbService = new ClientDatabaseService( new MongoDBDatabase() );
-mongoDbService.fetchData("SELECT * FROM Users");
