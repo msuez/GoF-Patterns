@@ -20,7 +20,7 @@
 // Real world application of OCP
 interface Customer {
     giveDiscount(): number;
-    addLoyaltyPoints(amountSpent): number;
+    addLoyaltyPoints(amountSpent: number): number;
 }
 
 class RegularCustomer implements Customer {
