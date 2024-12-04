@@ -1,5 +1,6 @@
 
 // Observer - Behavioral Design Pattern
+// One To Many Relationship Between Objects
 
 interface Observer {
     update( subject: Subject ): void;
