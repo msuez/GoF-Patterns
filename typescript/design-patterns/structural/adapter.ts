@@ -101,10 +101,10 @@ console.log( adapter.getHeight() );
 //     }
 // }
 
-// // let database = new MySQLDatabase();
+// let database = new MySQLDatabase();
 
-// // database.connectToMySQL(`mysql://localhost:3306/mydb`);
-// // database.executeMySQLQuery(`SELECT * FROM Users`);
+// database.connectToMySQL(`mysql://localhost:3306/mydb`);
+// database.executeMySQLQuery(`SELECT * FROM Users`);
 
 // let database = new DatabaseAdapter( new PostgresSQLDatabase() );
 
