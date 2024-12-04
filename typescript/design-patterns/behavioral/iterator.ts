@@ -126,3 +126,5 @@ console.log( userIterator.next() );
 console.log( userIterator.next() );
 console.log( userIterator.hasNext() );
 console.log( userIterator.next() );
+
+
